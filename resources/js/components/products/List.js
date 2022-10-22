@@ -1,13 +1,21 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchAllProducts } from "../../redux/actions/productActions";
+
+// react-bootstrap
 import Button from "react-bootstrap/Button";
 import Card from 'react-bootstrap/Card';
 import Table from 'react-bootstrap/Table';
 import Spinner from 'react-bootstrap/Spinner';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+// project imports
 import Create from "./Create";
 import Update from "./Update";
 import Delete from "./Delete";
+
+// actions
+import { fetchAllProducts } from "../../redux/actions/productActions";
 
 const List = () => {
 
@@ -43,11 +51,17 @@ const List = () => {
             <Update show={showUpdate} handleClose={handleCloseUpdate} id={productUpdateId} />
             <Delete show={showDelete} handleClose={handleCloseDelete} productDelete={productDelete} />
             <Card>
-                <Card.Header>
-                    Products Lists{' '}
-                    <Button variant="outline-primary" onClick={handleShowCreate}>
-                        Create Product
-                    </Button>
+                <Card.Header style={{ background: 'rgb(248 255 154 / 93%)' }}>
+                    <Row>
+                        <Col xs={10}>
+                            <h5>Products Lists{' '}</h5>
+                        </Col>
+                        <Col xs={2}>
+                            <Button variant="outline-primary" onClick={handleShowCreate}>
+                                Create Product
+                            </Button>
+                        </Col>
+                    </Row>
                 </Card.Header>
                 <Card.Body className="card-body">
                     <Table striped bordered hover>

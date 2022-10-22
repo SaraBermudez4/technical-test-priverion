@@ -13788,6 +13788,51 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/js/components/Footer.js":
+/*!*******************************************!*\
+  !*** ./resources/js/components/Footer.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-bootstrap/Container */ "./node_modules/react-bootstrap/esm/Container.js");
+/* harmony import */ var react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap/Nav */ "./node_modules/react-bootstrap/esm/Nav.js");
+/* harmony import */ var react_bootstrap_Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap/Navbar */ "./node_modules/react-bootstrap/esm/Navbar.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+// react-bootstrap
+
+
+
+
+
+var Footer = function Footer() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_bootstrap_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    style: {
+      background: '#ffff0069'
+    },
+    expand: "lg",
+    fixed: "bottom",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        className: "me-auto",
+        children: "\xA9 2022 Sara Bermudez Alvarez"
+      })
+    })
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Footer);
+
+/***/ }),
+
 /***/ "./resources/js/components/NavBar.js":
 /*!*******************************************!*\
   !*** ./resources/js/components/NavBar.js ***!
@@ -13809,6 +13854,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+// react-bootstrap
+
 
 
 
@@ -13816,24 +13863,23 @@ __webpack_require__.r(__webpack_exports__);
 
 var NavBar = function NavBar() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_bootstrap_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    bg: "light",
+    style: {
+      background: 'rgb(247 204 59 / 86%)'
+    },
     expand: "lg",
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_3__["default"], {
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_bootstrap_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"].Brand, {
         as: react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link,
         to: "/",
-        children: "Products Cool"
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h5", {
+          children: "Smile Toys"
+        })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_bootstrap_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"].Toggle, {
         "aria-controls": "basic-navbar-nav"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_bootstrap_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"].Collapse, {
         id: "basic-navbar-nav",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_5__["default"], {
-          className: "me-auto",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_5__["default"].Link, {
-            as: react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link,
-            to: "/",
-            children: "List"
-          })
+          className: "me-auto"
         })
       })]
     })
@@ -13856,21 +13902,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _containers_App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../containers/App */ "./resources/js/containers/App.js");
-/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
-/* harmony import */ var _redux_store__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../redux/store */ "./resources/js/redux/store.js");
+/* harmony import */ var _redux_store__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../redux/store */ "./resources/js/redux/store.js");
+/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
 
+// project imports
 
+
+
+// assets
 
 
 var root = react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot(document.getElementById('root'));
 root.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)((react__WEBPACK_IMPORTED_MODULE_0___default().StrictMode), {
   children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_redux__WEBPACK_IMPORTED_MODULE_2__.Provider, {
-    store: _redux_store__WEBPACK_IMPORTED_MODULE_5__.store,
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_containers_App__WEBPACK_IMPORTED_MODULE_3__["default"], {})
+    store: _redux_store__WEBPACK_IMPORTED_MODULE_4__.store,
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      style: {
+        background: "url(/images/background.png) no-repeat center center fixed",
+        width: '100vw',
+        height: '100vh'
+      },
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_containers_App__WEBPACK_IMPORTED_MODULE_3__["default"], {})
+    })
   })
 }));
 
@@ -13892,9 +13949,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! formik */ "./node_modules/formik/dist/formik.esm.js");
 /* harmony import */ var yup__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! yup */ "./node_modules/yup/es/index.js");
-/* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-bootstrap/Button */ "./node_modules/react-bootstrap/esm/Button.js");
-/* harmony import */ var react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-bootstrap/Form */ "./node_modules/react-bootstrap/esm/Form.js");
+/* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react-bootstrap/Button */ "./node_modules/react-bootstrap/esm/Button.js");
+/* harmony import */ var react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-bootstrap/Form */ "./node_modules/react-bootstrap/esm/Form.js");
 /* harmony import */ var react_bootstrap_Modal__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap/Modal */ "./node_modules/react-bootstrap/esm/Modal.js");
+/* harmony import */ var react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-bootstrap/Container */ "./node_modules/react-bootstrap/esm/Container.js");
+/* harmony import */ var react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-bootstrap/Row */ "./node_modules/react-bootstrap/esm/Row.js");
+/* harmony import */ var react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-bootstrap/Col */ "./node_modules/react-bootstrap/esm/Col.js");
 /* harmony import */ var _redux_actions_productActions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../redux/actions/productActions */ "./resources/js/redux/actions/productActions.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
@@ -13905,6 +13965,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // react-bootstrap
+
+
+
 
 
 
@@ -13935,227 +13998,245 @@ var Create = function Create(_ref) {
     show: show,
     onHide: handleClose,
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Modal__WEBPACK_IMPORTED_MODULE_6__["default"].Header, {
+      style: {
+        background: 'rgb(247 204 59 / 86%)'
+      },
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Modal__WEBPACK_IMPORTED_MODULE_6__["default"].Title, {
         children: "Create product"
       })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Modal__WEBPACK_IMPORTED_MODULE_6__["default"].Body, {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(formik__WEBPACK_IMPORTED_MODULE_2__.Formik, {
-        initialValues: {
-          name: "",
-          trademark: "",
-          category: "",
-          age: "",
-          price: "",
-          quantity: ""
-        },
-        validationSchema: validationSchema,
-        onSubmit: function onSubmit(values) {
-          dispatch((0,_redux_actions_productActions__WEBPACK_IMPORTED_MODULE_4__.postProduct)({
-            data: values
-          }));
-          dispatch((0,_redux_actions_productActions__WEBPACK_IMPORTED_MODULE_4__.fetchAllProducts)());
-          handleClose();
-        },
-        children: function children(_ref2) {
-          var values = _ref2.values,
-            errors = _ref2.errors,
-            touched = _ref2.touched,
-            handleChange = _ref2.handleChange,
-            handleBlur = _ref2.handleBlur,
-            handleSubmit = _ref2.handleSubmit,
-            isSubmitting = _ref2.isSubmitting;
-          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"], {
-            onSubmit: handleSubmit,
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Group, {
-              className: "mb-3",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Label, {
-                children: "Name"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Control, {
-                type: "text",
-                placeholder: "Enter name",
-                id: "name",
-                name: "name",
-                value: values.name,
-                onChange: handleChange,
-                onBlur: handleBlur,
-                style: {
-                  border: touched.name && errors.name ? "border: 2px solid #FF6565" : "1px solid #ced4da"
-                }
-              }), touched.name && errors.name ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-                style: {
-                  color: '#FF6565',
-                  padding: '.5em .2em',
-                  height: '1em',
-                  position: 'absolute',
-                  fontSize: '.8em'
-                },
-                children: errors.name
-              }) : null]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Group, {
-              className: "mb-3",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Label, {
-                children: "Trademark"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Control, {
-                as: "select",
-                id: "trademark",
-                name: "trademark",
-                value: values.trademark,
-                onChange: handleChange,
-                onBlur: handleBlur,
-                style: {
-                  border: touched.name && errors.name ? "border: 2px solid #FF6565" : "1px solid #ced4da"
-                },
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
-                  children: "Select..."
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
-                  children: "Lego"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
-                  children: "Marvel"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
-                  children: "Barbie"
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        fluid: true,
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(formik__WEBPACK_IMPORTED_MODULE_2__.Formik, {
+          initialValues: {
+            name: "",
+            trademark: "",
+            category: "",
+            age: "",
+            price: "",
+            quantity: ""
+          },
+          validationSchema: validationSchema,
+          onSubmit: function onSubmit(values) {
+            dispatch((0,_redux_actions_productActions__WEBPACK_IMPORTED_MODULE_4__.postProduct)({
+              data: values
+            }));
+            dispatch((0,_redux_actions_productActions__WEBPACK_IMPORTED_MODULE_4__.fetchAllProducts)());
+            handleClose();
+          },
+          children: function children(_ref2) {
+            var values = _ref2.values,
+              errors = _ref2.errors,
+              touched = _ref2.touched,
+              handleChange = _ref2.handleChange,
+              handleBlur = _ref2.handleBlur,
+              handleSubmit = _ref2.handleSubmit,
+              isSubmitting = _ref2.isSubmitting;
+            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"], {
+              onSubmit: handleSubmit,
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Group, {
+                className: "mb-3",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Label, {
+                  children: "Name"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Control, {
+                  type: "text",
+                  placeholder: "Enter name",
+                  id: "name",
+                  name: "name",
+                  value: values.name,
+                  onChange: handleChange,
+                  onBlur: handleBlur,
+                  style: {
+                    border: touched.name && errors.name ? "border: 2px solid #FF6565" : "1px solid #ced4da"
+                  }
+                }), touched.name && errors.name ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                  style: {
+                    color: '#FF6565',
+                    padding: '.5em .2em',
+                    height: '1em',
+                    position: 'absolute',
+                    fontSize: '.8em'
+                  },
+                  children: errors.name
+                }) : null]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_9__["default"], {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_10__["default"], {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Group, {
+                    className: "mb-3",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Label, {
+                      children: "Trademark"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Control, {
+                      as: "select",
+                      id: "trademark",
+                      name: "trademark",
+                      value: values.trademark,
+                      onChange: handleChange,
+                      onBlur: handleBlur,
+                      style: {
+                        border: touched.name && errors.name ? "border: 2px solid #FF6565" : "1px solid #ced4da"
+                      },
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                        children: "Select..."
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                        children: "Lego"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                        children: "Marvel"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                        children: "Barbie"
+                      })]
+                    }), touched.trademark && errors.trademark ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                      style: {
+                        color: '#FF6565',
+                        padding: '.5em .2em',
+                        height: '1em',
+                        position: 'absolute',
+                        fontSize: '.8em'
+                      },
+                      children: errors.trademark
+                    }) : null]
+                  })
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_10__["default"], {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Group, {
+                    className: "mb-3",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Label, {
+                      children: "Category"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Control, {
+                      as: "select",
+                      id: "category",
+                      name: "category",
+                      value: values.category,
+                      onChange: handleChange,
+                      onBlur: handleBlur,
+                      style: {
+                        border: touched.name && errors.name ? "border: 2px solid #FF6565" : "1px solid #ced4da"
+                      },
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                        children: "Select..."
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                        children: "Table games"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                        children: "Action figures"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                        children: "Teddies"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                        children: "Blocks and construction"
+                      })]
+                    }), touched.category && errors.category ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                      style: {
+                        color: '#FF6565',
+                        padding: '.5em .2em',
+                        height: '1em',
+                        position: 'absolute',
+                        fontSize: '.8em'
+                      },
+                      children: errors.category
+                    }) : null]
+                  })
                 })]
-              }), touched.trademark && errors.trademark ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-                style: {
-                  color: '#FF6565',
-                  padding: '.5em .2em',
-                  height: '1em',
-                  position: 'absolute',
-                  fontSize: '.8em'
-                },
-                children: errors.trademark
-              }) : null]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Group, {
-              className: "mb-3",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Label, {
-                children: "Category"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Control, {
-                as: "select",
-                id: "category",
-                name: "category",
-                value: values.category,
-                onChange: handleChange,
-                onBlur: handleBlur,
-                style: {
-                  border: touched.name && errors.name ? "border: 2px solid #FF6565" : "1px solid #ced4da"
-                },
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
-                  children: "Select..."
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
-                  children: "Table games"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
-                  children: "Action figures"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
-                  children: "Teddies"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
-                  children: "Teddies"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Group, {
+                className: "mb-3",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Label, {
+                  children: "Age"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Control, {
+                  as: "select",
+                  id: "age",
+                  name: "age",
+                  value: values.age,
+                  onChange: handleChange,
+                  onBlur: handleBlur,
+                  style: {
+                    border: touched.name && errors.name ? "border: 2px solid #FF6565" : "1px solid #ced4da"
+                  },
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                    children: "Select..."
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                    children: "0-12m"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                    children: "1-3a"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                    children: "4-6a"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                    children: "+12"
+                  })]
+                }), touched.age && errors.age ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                  style: {
+                    color: '#FF6565',
+                    padding: '.5em .2em',
+                    height: '1em',
+                    position: 'absolute',
+                    fontSize: '.8em'
+                  },
+                  children: errors.age
+                }) : null]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_9__["default"], {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_10__["default"], {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Group, {
+                    className: "mb-3",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Label, {
+                      children: "Price"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Control, {
+                      type: "text",
+                      placeholder: "Enter price",
+                      id: "price",
+                      name: "price",
+                      value: values.price,
+                      onChange: handleChange,
+                      onBlur: handleBlur,
+                      style: {
+                        border: touched.name && errors.name ? "border: 2px solid #FF6565" : "1px solid #ced4da"
+                      }
+                    }), touched.price && errors.price ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                      style: {
+                        color: '#FF6565',
+                        padding: '.5em .2em',
+                        height: '1em',
+                        position: 'absolute',
+                        fontSize: '.8em'
+                      },
+                      children: errors.price
+                    }) : null]
+                  })
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_10__["default"], {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Group, {
+                    className: "mb-3",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Label, {
+                      children: "Quantity"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Control, {
+                      type: "text",
+                      placeholder: "Enter quantity",
+                      id: "quantity",
+                      name: "quantity",
+                      value: values.quantity,
+                      onChange: handleChange,
+                      onBlur: handleBlur,
+                      style: {
+                        border: touched.name && errors.name ? "border: 2px solid #FF6565" : "1px solid #ced4da"
+                      }
+                    }), touched.quantity && errors.quantity ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                      style: {
+                        color: '#FF6565',
+                        padding: '.5em .2em',
+                        height: '1em',
+                        position: 'absolute',
+                        fontSize: '.8em'
+                      },
+                      children: errors.quantity
+                    }) : null]
+                  })
                 })]
-              }), touched.category && errors.category ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-                style: {
-                  color: '#FF6565',
-                  padding: '.5em .2em',
-                  height: '1em',
-                  position: 'absolute',
-                  fontSize: '.8em'
-                },
-                children: errors.category
-              }) : null]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Group, {
-              className: "mb-3",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Label, {
-                children: "Age"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Control, {
-                as: "select",
-                id: "age",
-                name: "age",
-                value: values.age,
-                onChange: handleChange,
-                onBlur: handleBlur,
-                style: {
-                  border: touched.name && errors.name ? "border: 2px solid #FF6565" : "1px solid #ced4da"
-                },
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
-                  children: "Select..."
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
-                  children: "0-12m"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
-                  children: "1-3a"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
-                  children: "4-6a"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
-                  children: "+12"
-                })]
-              }), touched.age && errors.age ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-                style: {
-                  color: '#FF6565',
-                  padding: '.5em .2em',
-                  height: '1em',
-                  position: 'absolute',
-                  fontSize: '.8em'
-                },
-                children: errors.age
-              }) : null]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Group, {
-              className: "mb-3",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Label, {
-                children: "Price"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Control, {
-                type: "text",
-                placeholder: "Enter price",
-                id: "price",
-                name: "price",
-                value: values.price,
-                onChange: handleChange,
-                onBlur: handleBlur,
-                style: {
-                  border: touched.name && errors.name ? "border: 2px solid #FF6565" : "1px solid #ced4da"
-                }
-              }), touched.price && errors.price ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-                style: {
-                  color: '#FF6565',
-                  padding: '.5em .2em',
-                  height: '1em',
-                  position: 'absolute',
-                  fontSize: '.8em'
-                },
-                children: errors.price
-              }) : null]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Group, {
-              className: "mb-3",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Label, {
-                children: "Quantity"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Control, {
-                type: "text",
-                placeholder: "Enter quantity",
-                id: "quantity",
-                name: "quantity",
-                value: values.quantity,
-                onChange: handleChange,
-                onBlur: handleBlur,
-                style: {
-                  border: touched.name && errors.name ? "border: 2px solid #FF6565" : "1px solid #ced4da"
-                }
-              }), touched.quantity && errors.quantity ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-                style: {
-                  color: '#FF6565',
-                  padding: '.5em .2em',
-                  height: '1em',
-                  position: 'absolute',
-                  fontSize: '.8em'
-                },
-                children: errors.quantity
-              }) : null]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_8__["default"], {
-              variant: "primary",
-              type: "submit",
-              disabled: isSubmitting,
-              children: " Create product "
-            }), ' ', /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_8__["default"], {
-              variant: "danger",
-              onClick: handleClose,
-              children: "Cancel"
-            })]
-          });
-        }
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_11__["default"], {
+                variant: "primary",
+                type: "submit",
+                disabled: isSubmitting,
+                children: " Create product "
+              }), ' ', /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_11__["default"], {
+                variant: "danger",
+                onClick: handleClose,
+                children: "Cancel"
+              })]
+            });
+          }
+        })
       })
     })]
   });
@@ -14177,15 +14258,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap/Button */ "./node_modules/react-bootstrap/esm/Button.js");
 /* harmony import */ var react_bootstrap_Modal__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap/Modal */ "./node_modules/react-bootstrap/esm/Modal.js");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _redux_actions_productActions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../redux/actions/productActions */ "./resources/js/redux/actions/productActions.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
+// react-bootstrap
 
+
+
+// actions
 
 
 
@@ -14204,7 +14289,7 @@ var Delete = function Delete(_ref) {
     onHide: handleClose,
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap_Modal__WEBPACK_IMPORTED_MODULE_4__["default"].Header, {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap_Modal__WEBPACK_IMPORTED_MODULE_4__["default"].Title, {
-        children: ["Delete product $", productDelete.name]
+        children: ["Delete product ", productDelete.name]
       })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap_Modal__WEBPACK_IMPORTED_MODULE_4__["default"].Body, {
       children: "Are you sure you want to delete this product?"
@@ -14239,14 +14324,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var _redux_actions_productActions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../redux/actions/productActions */ "./resources/js/redux/actions/productActions.js");
-/* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-bootstrap/Button */ "./node_modules/react-bootstrap/esm/Button.js");
+/* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react-bootstrap/Button */ "./node_modules/react-bootstrap/esm/Button.js");
 /* harmony import */ var react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-bootstrap/Card */ "./node_modules/react-bootstrap/esm/Card.js");
-/* harmony import */ var react_bootstrap_Table__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-bootstrap/Table */ "./node_modules/react-bootstrap/esm/Table.js");
+/* harmony import */ var react_bootstrap_Table__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react-bootstrap/Table */ "./node_modules/react-bootstrap/esm/Table.js");
 /* harmony import */ var react_bootstrap_Spinner__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-bootstrap/Spinner */ "./node_modules/react-bootstrap/esm/Spinner.js");
-/* harmony import */ var _Create__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Create */ "./resources/js/components/products/Create.js");
-/* harmony import */ var _Update__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Update */ "./resources/js/components/products/Update.js");
-/* harmony import */ var _Delete__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Delete */ "./resources/js/components/products/Delete.js");
+/* harmony import */ var react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-bootstrap/Row */ "./node_modules/react-bootstrap/esm/Row.js");
+/* harmony import */ var react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-bootstrap/Col */ "./node_modules/react-bootstrap/esm/Col.js");
+/* harmony import */ var _Create__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Create */ "./resources/js/components/products/Create.js");
+/* harmony import */ var _Update__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Update */ "./resources/js/components/products/Update.js");
+/* harmony import */ var _Delete__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Delete */ "./resources/js/components/products/Delete.js");
+/* harmony import */ var _redux_actions_productActions__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../redux/actions/productActions */ "./resources/js/redux/actions/productActions.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -14257,12 +14344,20 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+// react-bootstrap
 
 
 
 
 
 
+
+// project imports
+
+
+
+
+// actions
 
 
 
@@ -14313,7 +14408,7 @@ var List = function List() {
     return setShowDelete(true);
   };
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    dispatch((0,_redux_actions_productActions__WEBPACK_IMPORTED_MODULE_2__.fetchAllProducts)());
+    dispatch((0,_redux_actions_productActions__WEBPACK_IMPORTED_MODULE_5__.fetchAllProducts)());
   }, [dispatch]);
   if (loading) {
     return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_bootstrap_Spinner__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -14322,27 +14417,40 @@ var List = function List() {
     });
   }
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Create__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Create__WEBPACK_IMPORTED_MODULE_2__["default"], {
       show: showCreate,
       handleClose: handleCloseCreate
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Update__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Update__WEBPACK_IMPORTED_MODULE_3__["default"], {
       show: showUpdate,
       handleClose: handleCloseUpdate,
       id: productUpdateId
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Delete__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Delete__WEBPACK_IMPORTED_MODULE_4__["default"], {
       show: showDelete,
       handleClose: handleCloseDelete,
       productDelete: productDelete
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_8__["default"], {
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_8__["default"].Header, {
-        children: ["Products Lists", ' ', /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_9__["default"], {
-          variant: "outline-primary",
-          onClick: handleShowCreate,
-          children: "Create Product"
-        })]
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_8__["default"].Header, {
+        style: {
+          background: 'rgb(248 255 154 / 93%)'
+        },
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_9__["default"], {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_10__["default"], {
+            xs: 10,
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("h5", {
+              children: ["Products Lists", ' ']
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_10__["default"], {
+            xs: 2,
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_11__["default"], {
+              variant: "outline-primary",
+              onClick: handleShowCreate,
+              children: "Create Product"
+            })
+          })]
+        })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_8__["default"].Body, {
         className: "card-body",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_bootstrap_Table__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_bootstrap_Table__WEBPACK_IMPORTED_MODULE_12__["default"], {
           striped: true,
           bordered: true,
           hover: true,
@@ -14385,14 +14493,14 @@ var List = function List() {
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
                   children: product.quantity
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("td", {
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_9__["default"], {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_11__["default"], {
                     variant: "outline-primary",
                     onClick: function onClick() {
                       setProductUpdateId(product.id);
                       handleShowUpdate();
                     },
                     children: "Update"
-                  }), ' ', /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_9__["default"], {
+                  }), ' ', /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_11__["default"], {
                     variant: "outline-danger",
                     onClick: function onClick() {
                       setProductDelete(product);
@@ -14429,9 +14537,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! formik */ "./node_modules/formik/dist/formik.esm.js");
 /* harmony import */ var yup__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! yup */ "./node_modules/yup/es/index.js");
-/* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-bootstrap/Button */ "./node_modules/react-bootstrap/esm/Button.js");
-/* harmony import */ var react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-bootstrap/Form */ "./node_modules/react-bootstrap/esm/Form.js");
+/* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react-bootstrap/Button */ "./node_modules/react-bootstrap/esm/Button.js");
+/* harmony import */ var react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-bootstrap/Form */ "./node_modules/react-bootstrap/esm/Form.js");
 /* harmony import */ var react_bootstrap_Modal__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap/Modal */ "./node_modules/react-bootstrap/esm/Modal.js");
+/* harmony import */ var react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-bootstrap/Container */ "./node_modules/react-bootstrap/esm/Container.js");
+/* harmony import */ var react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-bootstrap/Row */ "./node_modules/react-bootstrap/esm/Row.js");
+/* harmony import */ var react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-bootstrap/Col */ "./node_modules/react-bootstrap/esm/Col.js");
 /* harmony import */ var _redux_actions_productActions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../redux/actions/productActions */ "./resources/js/redux/actions/productActions.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
@@ -14448,6 +14559,9 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 // react-bootstrap
+
+
+
 
 
 
@@ -14509,222 +14623,240 @@ var Update = function Update(_ref) {
     show: show,
     onHide: handleClose,
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Modal__WEBPACK_IMPORTED_MODULE_6__["default"].Header, {
+      style: {
+        background: 'rgb(247 204 59 / 86%)'
+      },
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Modal__WEBPACK_IMPORTED_MODULE_6__["default"].Title, {
         children: "Update product"
       })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Modal__WEBPACK_IMPORTED_MODULE_6__["default"].Body, {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(formik__WEBPACK_IMPORTED_MODULE_2__.Formik, {
-        initialValues: initialValues,
-        enableReinitialize: true,
-        validationSchema: validationSchema,
-        onSubmit: function onSubmit(values) {
-          dispatch((0,_redux_actions_productActions__WEBPACK_IMPORTED_MODULE_4__.updateProduct)({
-            data: values,
-            id: id
-          }));
-          dispatch((0,_redux_actions_productActions__WEBPACK_IMPORTED_MODULE_4__.fetchAllProducts)());
-          handleClose();
-        },
-        children: function children(_ref2) {
-          var values = _ref2.values,
-            errors = _ref2.errors,
-            touched = _ref2.touched,
-            handleChange = _ref2.handleChange,
-            handleBlur = _ref2.handleBlur,
-            handleSubmit = _ref2.handleSubmit,
-            isSubmitting = _ref2.isSubmitting;
-          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"], {
-            onSubmit: handleSubmit,
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Group, {
-              className: "mb-3",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Label, {
-                children: "Name"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Control, {
-                type: "text",
-                placeholder: "Enter name",
-                id: "name",
-                name: "name",
-                value: values.name,
-                onChange: handleChange,
-                onBlur: handleBlur,
-                style: {
-                  border: touched.name && errors.name ? "border: 2px solid #FF6565" : "1px solid #ced4da"
-                }
-              }), touched.name && errors.name ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-                style: {
-                  color: '#FF6565',
-                  padding: '.5em .2em',
-                  height: '1em',
-                  position: 'absolute',
-                  fontSize: '.8em'
-                },
-                children: errors.name
-              }) : null]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Group, {
-              className: "mb-3",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Label, {
-                children: "Trademark"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Control, {
-                as: "select",
-                id: "trademark",
-                name: "trademark",
-                value: values.trademark,
-                onChange: handleChange,
-                onBlur: handleBlur,
-                style: {
-                  border: touched.name && errors.name ? "border: 2px solid #FF6565" : "1px solid #ced4da"
-                },
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
-                  children: "Select..."
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
-                  children: "Lego"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
-                  children: "Marvel"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
-                  children: "Barbie"
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        fluid: true,
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(formik__WEBPACK_IMPORTED_MODULE_2__.Formik, {
+          initialValues: initialValues,
+          enableReinitialize: true,
+          validationSchema: validationSchema,
+          onSubmit: function onSubmit(values) {
+            dispatch((0,_redux_actions_productActions__WEBPACK_IMPORTED_MODULE_4__.updateProduct)({
+              data: values,
+              id: id
+            }));
+            dispatch((0,_redux_actions_productActions__WEBPACK_IMPORTED_MODULE_4__.fetchAllProducts)());
+            handleClose();
+          },
+          children: function children(_ref2) {
+            var values = _ref2.values,
+              errors = _ref2.errors,
+              touched = _ref2.touched,
+              handleChange = _ref2.handleChange,
+              handleBlur = _ref2.handleBlur,
+              handleSubmit = _ref2.handleSubmit,
+              isSubmitting = _ref2.isSubmitting;
+            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"], {
+              onSubmit: handleSubmit,
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Group, {
+                className: "mb-3",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Label, {
+                  children: "Name"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Control, {
+                  type: "text",
+                  placeholder: "Enter name",
+                  id: "name",
+                  name: "name",
+                  value: values.name,
+                  onChange: handleChange,
+                  onBlur: handleBlur,
+                  style: {
+                    border: touched.name && errors.name ? "border: 2px solid #FF6565" : "1px solid #ced4da"
+                  }
+                }), touched.name && errors.name ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                  style: {
+                    color: '#FF6565',
+                    padding: '.5em .2em',
+                    height: '1em',
+                    position: 'absolute',
+                    fontSize: '.8em'
+                  },
+                  children: errors.name
+                }) : null]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_9__["default"], {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_10__["default"], {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Group, {
+                    className: "mb-3",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Label, {
+                      children: "Trademark"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Control, {
+                      as: "select",
+                      id: "trademark",
+                      name: "trademark",
+                      value: values.trademark,
+                      onChange: handleChange,
+                      onBlur: handleBlur,
+                      style: {
+                        border: touched.name && errors.name ? "border: 2px solid #FF6565" : "1px solid #ced4da"
+                      },
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                        children: "Select..."
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                        children: "Lego"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                        children: "Marvel"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                        children: "Barbie"
+                      })]
+                    }), touched.trademark && errors.trademark ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                      style: {
+                        color: '#FF6565',
+                        padding: '.5em .2em',
+                        height: '1em',
+                        position: 'absolute',
+                        fontSize: '.8em'
+                      },
+                      children: errors.trademark
+                    }) : null]
+                  })
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_10__["default"], {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Group, {
+                    className: "mb-3",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Label, {
+                      children: "Category"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Control, {
+                      as: "select",
+                      id: "category",
+                      name: "category",
+                      value: values.category,
+                      onChange: handleChange,
+                      onBlur: handleBlur,
+                      style: {
+                        border: touched.name && errors.name ? "border: 2px solid #FF6565" : "1px solid #ced4da"
+                      },
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                        children: "Select..."
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                        children: "Table games"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                        children: "Action figures"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                        children: "Teddies"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                        children: "Blocks and construction"
+                      })]
+                    }), touched.category && errors.category ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                      style: {
+                        color: '#FF6565',
+                        padding: '.5em .2em',
+                        height: '1em',
+                        position: 'absolute',
+                        fontSize: '.8em'
+                      },
+                      children: errors.category
+                    }) : null]
+                  })
                 })]
-              }), touched.trademark && errors.trademark ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-                style: {
-                  color: '#FF6565',
-                  padding: '.5em .2em',
-                  height: '1em',
-                  position: 'absolute',
-                  fontSize: '.8em'
-                },
-                children: errors.trademark
-              }) : null]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Group, {
-              className: "mb-3",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Label, {
-                children: "Category"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Control, {
-                as: "select",
-                id: "category",
-                name: "category",
-                value: values.category,
-                onChange: handleChange,
-                onBlur: handleBlur,
-                style: {
-                  border: touched.name && errors.name ? "border: 2px solid #FF6565" : "1px solid #ced4da"
-                },
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
-                  children: "Select..."
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
-                  children: "Table games"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
-                  children: "Action figures"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
-                  children: "Teddies"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
-                  children: "Teddies"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Group, {
+                className: "mb-3",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Label, {
+                  children: "Age"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Control, {
+                  as: "select",
+                  id: "age",
+                  name: "age",
+                  value: values.age,
+                  onChange: handleChange,
+                  onBlur: handleBlur,
+                  style: {
+                    border: touched.name && errors.name ? "border: 2px solid #FF6565" : "1px solid #ced4da"
+                  },
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                    children: "Select..."
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                    children: "0-12m"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                    children: "1-3a"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                    children: "4-6a"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                    children: "+12"
+                  })]
+                }), touched.age && errors.age ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                  style: {
+                    color: '#FF6565',
+                    padding: '.5em .2em',
+                    height: '1em',
+                    position: 'absolute',
+                    fontSize: '.8em'
+                  },
+                  children: errors.age
+                }) : null]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_9__["default"], {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_10__["default"], {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Group, {
+                    className: "mb-3",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Label, {
+                      children: "Price"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Control, {
+                      type: "text",
+                      placeholder: "Enter price",
+                      id: "price",
+                      name: "price",
+                      value: values.price,
+                      onChange: handleChange,
+                      onBlur: handleBlur,
+                      style: {
+                        border: touched.name && errors.name ? "border: 2px solid #FF6565" : "1px solid #ced4da"
+                      }
+                    }), touched.price && errors.price ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                      style: {
+                        color: '#FF6565',
+                        padding: '.5em .2em',
+                        height: '1em',
+                        position: 'absolute',
+                        fontSize: '.8em'
+                      },
+                      children: errors.price
+                    }) : null]
+                  })
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_10__["default"], {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Group, {
+                    className: "mb-3",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Label, {
+                      children: "Quantity"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_8__["default"].Control, {
+                      type: "text",
+                      placeholder: "Enter quantity",
+                      id: "quantity",
+                      name: "quantity",
+                      value: values.quantity,
+                      onChange: handleChange,
+                      onBlur: handleBlur,
+                      style: {
+                        border: touched.name && errors.name ? "border: 2px solid #FF6565" : "1px solid #ced4da"
+                      }
+                    }), touched.quantity && errors.quantity ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                      style: {
+                        color: '#FF6565',
+                        padding: '.5em .2em',
+                        height: '1em',
+                        position: 'absolute',
+                        fontSize: '.8em'
+                      },
+                      children: errors.quantity
+                    }) : null]
+                  })
                 })]
-              }), touched.category && errors.category ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-                style: {
-                  color: '#FF6565',
-                  padding: '.5em .2em',
-                  height: '1em',
-                  position: 'absolute',
-                  fontSize: '.8em'
-                },
-                children: errors.category
-              }) : null]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Group, {
-              className: "mb-3",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Label, {
-                children: "Age"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Control, {
-                as: "select",
-                id: "age",
-                name: "age",
-                value: values.age,
-                onChange: handleChange,
-                onBlur: handleBlur,
-                style: {
-                  border: touched.name && errors.name ? "border: 2px solid #FF6565" : "1px solid #ced4da"
-                },
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
-                  children: "Select..."
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
-                  children: "0-12m"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
-                  children: "1-3a"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
-                  children: "4-6a"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
-                  children: "+12"
-                })]
-              }), touched.age && errors.age ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-                style: {
-                  color: '#FF6565',
-                  padding: '.5em .2em',
-                  height: '1em',
-                  position: 'absolute',
-                  fontSize: '.8em'
-                },
-                children: errors.age
-              }) : null]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Group, {
-              className: "mb-3",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Label, {
-                children: "Price"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Control, {
-                type: "text",
-                placeholder: "Enter price",
-                id: "price",
-                name: "price",
-                value: values.price,
-                onChange: handleChange,
-                onBlur: handleBlur,
-                style: {
-                  border: touched.name && errors.name ? "border: 2px solid #FF6565" : "1px solid #ced4da"
-                }
-              }), touched.price && errors.price ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-                style: {
-                  color: '#FF6565',
-                  padding: '.5em .2em',
-                  height: '1em',
-                  position: 'absolute',
-                  fontSize: '.8em'
-                },
-                children: errors.price
-              }) : null]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Group, {
-              className: "mb-3",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Label, {
-                children: "Quantity"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_7__["default"].Control, {
-                type: "text",
-                placeholder: "Enter quantity",
-                id: "quantity",
-                name: "quantity",
-                value: values.quantity,
-                onChange: handleChange,
-                onBlur: handleBlur,
-                style: {
-                  border: touched.name && errors.name ? "border: 2px solid #FF6565" : "1px solid #ced4da"
-                }
-              }), touched.quantity && errors.quantity ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-                style: {
-                  color: '#FF6565',
-                  padding: '.5em .2em',
-                  height: '1em',
-                  position: 'absolute',
-                  fontSize: '.8em'
-                },
-                children: errors.quantity
-              }) : null]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_8__["default"], {
-              variant: "primary",
-              type: "submit",
-              disabled: isSubmitting,
-              children: "Update product "
-            }), ' ', /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_8__["default"], {
-              variant: "danger",
-              onClick: handleClose,
-              children: "Cancel"
-            })]
-          });
-        }
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_11__["default"], {
+                variant: "primary",
+                type: "submit",
+                disabled: isSubmitting,
+                children: "Update product "
+              }), ' ', /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_11__["default"], {
+                variant: "danger",
+                onClick: handleClose,
+                children: "Cancel"
+              })]
+            });
+          }
+        })
       })
     })]
   });
@@ -14746,33 +14878,37 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
 /* harmony import */ var _components_products_List__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/products/List */ "./resources/js/components/products/List.js");
 /* harmony import */ var _components_NavBar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/NavBar */ "./resources/js/components/NavBar.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Footer */ "./resources/js/components/Footer.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
+
+
+// project imports
 
 
 
 
 
 var App = function App() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.BrowserRouter, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_NavBar__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.BrowserRouter, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_NavBar__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
       style: {
         padding: '20px 40px'
       },
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Routes, {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Routes, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
           path: "/",
-          element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_products_List__WEBPACK_IMPORTED_MODULE_1__["default"], {})
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, {
+          element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_products_List__WEBPACK_IMPORTED_MODULE_1__["default"], {})
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
           path: "/list",
-          element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_products_List__WEBPACK_IMPORTED_MODULE_1__["default"], {})
+          element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_products_List__WEBPACK_IMPORTED_MODULE_1__["default"], {})
         })]
       })
-    })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], {})]
   });
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
@@ -14827,45 +14963,59 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var ___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! . */ "./resources/js/redux/actions/index.js");
 
+
+// Get all products
 var fetchAllProducts = function fetchAllProducts() {
   return {
     type: ___WEBPACK_IMPORTED_MODULE_0__.FETCH_ALL_PRODUCTS
   };
 };
+
+// Get all products success
 var fetchAllProductsSuccess = function fetchAllProductsSuccess(products) {
   return {
     type: ___WEBPACK_IMPORTED_MODULE_0__.FETCH_ALL_PRODUCTS_SUCCESS,
     payload: products
   };
 };
+
+// Get product
 var fetchProduct = function fetchProduct(payload) {
   return {
     type: ___WEBPACK_IMPORTED_MODULE_0__.FETCH_PRODUCT,
     payload: payload
   };
 };
+
+// Get product success
 var fetchProductSuccess = function fetchProductSuccess(product) {
   return {
     type: ___WEBPACK_IMPORTED_MODULE_0__.FETCH_PRODUCT_SUCCESS,
     payload: product
   };
 };
+
+// Post product
 var postProduct = function postProduct(payload) {
   return {
     type: ___WEBPACK_IMPORTED_MODULE_0__.POST_PRODUCT,
     payload: payload
   };
 };
-var deleteProduct = function deleteProduct(id) {
-  return {
-    type: ___WEBPACK_IMPORTED_MODULE_0__.DELETE_PRODUCT,
-    payload: id
-  };
-};
+
+// Update product
 var updateProduct = function updateProduct(product) {
   return {
     type: ___WEBPACK_IMPORTED_MODULE_0__.UPDATE_PRODUCT,
     payload: product
+  };
+};
+
+// Delete product
+var deleteProduct = function deleteProduct(id) {
+  return {
+    type: ___WEBPACK_IMPORTED_MODULE_0__.DELETE_PRODUCT,
+    payload: id
   };
 };
 
@@ -14936,6 +15086,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ProductReducer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ProductReducer */ "./resources/js/redux/reducers/ProductReducer.js");
 
 
+// project imports
+
 var RootReducer = (0,redux__WEBPACK_IMPORTED_MODULE_1__.combineReducers)({
   products: _ProductReducer__WEBPACK_IMPORTED_MODULE_0__["default"]
 });
@@ -14960,6 +15112,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return exports; }; var exports = {}, Op = Object.prototype, hasOwn = Op.hasOwnProperty, $Symbol = "function" == typeof Symbol ? Symbol : {}, iteratorSymbol = $Symbol.iterator || "@@iterator", asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator", toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag"; function define(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: !0, configurable: !0, writable: !0 }), obj[key]; } try { define({}, ""); } catch (err) { define = function define(obj, key, value) { return obj[key] = value; }; } function wrap(innerFn, outerFn, self, tryLocsList) { var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator, generator = Object.create(protoGenerator.prototype), context = new Context(tryLocsList || []); return generator._invoke = function (innerFn, self, context) { var state = "suspendedStart"; return function (method, arg) { if ("executing" === state) throw new Error("Generator is already running"); if ("completed" === state) { if ("throw" === method) throw arg; return doneResult(); } for (context.method = method, context.arg = arg;;) { var delegate = context.delegate; if (delegate) { var delegateResult = maybeInvokeDelegate(delegate, context); if (delegateResult) { if (delegateResult === ContinueSentinel) continue; return delegateResult; } } if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) { if ("suspendedStart" === state) throw state = "completed", context.arg; context.dispatchException(context.arg); } else "return" === context.method && context.abrupt("return", context.arg); state = "executing"; var record = tryCatch(innerFn, self, context); if ("normal" === record.type) { if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue; return { value: record.arg, done: context.done }; } "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg); } }; }(innerFn, self, context), generator; } function tryCatch(fn, obj, arg) { try { return { type: "normal", arg: fn.call(obj, arg) }; } catch (err) { return { type: "throw", arg: err }; } } exports.wrap = wrap; var ContinueSentinel = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var IteratorPrototype = {}; define(IteratorPrototype, iteratorSymbol, function () { return this; }); var getProto = Object.getPrototypeOf, NativeIteratorPrototype = getProto && getProto(getProto(values([]))); NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype); var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype); function defineIteratorMethods(prototype) { ["next", "throw", "return"].forEach(function (method) { define(prototype, method, function (arg) { return this._invoke(method, arg); }); }); } function AsyncIterator(generator, PromiseImpl) { function invoke(method, arg, resolve, reject) { var record = tryCatch(generator[method], generator, arg); if ("throw" !== record.type) { var result = record.arg, value = result.value; return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) { invoke("next", value, resolve, reject); }, function (err) { invoke("throw", err, resolve, reject); }) : PromiseImpl.resolve(value).then(function (unwrapped) { result.value = unwrapped, resolve(result); }, function (error) { return invoke("throw", error, resolve, reject); }); } reject(record.arg); } var previousPromise; this._invoke = function (method, arg) { function callInvokeWithMethodAndArg() { return new PromiseImpl(function (resolve, reject) { invoke(method, arg, resolve, reject); }); } return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); }; } function maybeInvokeDelegate(delegate, context) { var method = delegate.iterator[context.method]; if (undefined === method) { if (context.delegate = null, "throw" === context.method) { if (delegate.iterator["return"] && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method)) return ContinueSentinel; context.method = "throw", context.arg = new TypeError("The iterator does not provide a 'throw' method"); } return ContinueSentinel; } var record = tryCatch(method, delegate.iterator, context.arg); if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel; var info = record.arg; return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel); } function pushTryEntry(locs) { var entry = { tryLoc: locs[0] }; 1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry); } function resetTryEntry(entry) { var record = entry.completion || {}; record.type = "normal", delete record.arg, entry.completion = record; } function Context(tryLocsList) { this.tryEntries = [{ tryLoc: "root" }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0); } function values(iterable) { if (iterable) { var iteratorMethod = iterable[iteratorSymbol]; if (iteratorMethod) return iteratorMethod.call(iterable); if ("function" == typeof iterable.next) return iterable; if (!isNaN(iterable.length)) { var i = -1, next = function next() { for (; ++i < iterable.length;) { if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next; } return next.value = undefined, next.done = !0, next; }; return next.next = next; } } return { next: doneResult }; } function doneResult() { return { value: undefined, done: !0 }; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, define(Gp, "constructor", GeneratorFunctionPrototype), define(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) { var ctor = "function" == typeof genFun && genFun.constructor; return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name)); }, exports.mark = function (genFun) { return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun; }, exports.awrap = function (arg) { return { __await: arg }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () { return this; }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) { void 0 === PromiseImpl && (PromiseImpl = Promise); var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl); return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) { return result.done ? result.value : iter.next(); }); }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () { return this; }), define(Gp, "toString", function () { return "[object Generator]"; }), exports.keys = function (object) { var keys = []; for (var key in object) { keys.push(key); } return keys.reverse(), function next() { for (; keys.length;) { var key = keys.pop(); if (key in object) return next.value = key, next.done = !1, next; } return next.done = !0, next; }; }, exports.values = values, Context.prototype = { constructor: Context, reset: function reset(skipTempReset) { if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) { "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined); } }, stop: function stop() { this.done = !0; var rootRecord = this.tryEntries[0].completion; if ("throw" === rootRecord.type) throw rootRecord.arg; return this.rval; }, dispatchException: function dispatchException(exception) { if (this.done) throw exception; var context = this; function handle(loc, caught) { return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught; } for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i], record = entry.completion; if ("root" === entry.tryLoc) return handle("end"); if (entry.tryLoc <= this.prev) { var hasCatch = hasOwn.call(entry, "catchLoc"), hasFinally = hasOwn.call(entry, "finallyLoc"); if (hasCatch && hasFinally) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } else if (hasCatch) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); } else { if (!hasFinally) throw new Error("try statement without catch or finally"); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } } } }, abrupt: function abrupt(type, arg) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) { var finallyEntry = entry; break; } } finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null); var record = finallyEntry ? finallyEntry.completion : {}; return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record); }, complete: function complete(record, afterLoc) { if ("throw" === record.type) throw record.arg; return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel; }, finish: function finish(finallyLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel; } }, "catch": function _catch(tryLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc === tryLoc) { var record = entry.completion; if ("throw" === record.type) { var thrown = record.arg; resetTryEntry(entry); } return thrown; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(iterable, resultName, nextLoc) { return this.delegate = { iterator: values(iterable), resultName: resultName, nextLoc: nextLoc }, "next" === this.method && (this.arg = undefined), ContinueSentinel; } }, exports; }
 var _marked = /*#__PURE__*/_regeneratorRuntime().mark(rootSaga);
 
+
+// project imports
 
 function rootSaga() {
   return _regeneratorRuntime().wrap(function rootSaga$(_context) {
@@ -14989,9 +15143,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ rootSaga)
 /* harmony export */ });
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! redux-saga/effects */ "./node_modules/redux-saga/dist/redux-saga-effects-npm-proxy.esm.js");
+/* harmony import */ var redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux-saga/effects */ "./node_modules/redux-saga/dist/redux-saga-effects-npm-proxy.esm.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _actions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../actions */ "./resources/js/redux/actions/index.js");
 /* harmony import */ var _actions_productActions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../actions/productActions */ "./resources/js/redux/actions/productActions.js");
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
@@ -15011,8 +15165,14 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
 
+// third party
 
 
+// actions
+
+
+
+// REQUESTS
 var axiosFetchAllProducts = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
     var response;
@@ -15022,7 +15182,7 @@ var axiosFetchAllProducts = /*#__PURE__*/function () {
           case 0:
             _context.prev = 0;
             _context.next = 3;
-            return axios__WEBPACK_IMPORTED_MODULE_0___default().get("http://127.0.0.1:8000/products/");
+            return axios__WEBPACK_IMPORTED_MODULE_1___default().get("http://127.0.0.1:8000/products/");
           case 3:
             response = _context.sent;
             return _context.abrupt("return", response);
@@ -15050,7 +15210,7 @@ var axiosFetchProduct = /*#__PURE__*/function () {
           case 0:
             _context2.prev = 0;
             _context2.next = 3;
-            return axios__WEBPACK_IMPORTED_MODULE_0___default().get("http://127.0.0.1:8000/products/".concat(id));
+            return axios__WEBPACK_IMPORTED_MODULE_1___default().get("http://127.0.0.1:8000/products/".concat(id));
           case 3:
             response = _context2.sent;
             return _context2.abrupt("return", response);
@@ -15077,7 +15237,7 @@ var axiosPostProduct = /*#__PURE__*/function () {
           case 0:
             _context3.prev = 0;
             _context3.next = 3;
-            return axios__WEBPACK_IMPORTED_MODULE_0___default().post("http://127.0.0.1:8000/products", data);
+            return axios__WEBPACK_IMPORTED_MODULE_1___default().post("http://127.0.0.1:8000/products", data);
           case 3:
             _context3.next = 8;
             break;
@@ -15104,7 +15264,7 @@ var axiosUpdateProduct = /*#__PURE__*/function () {
           case 0:
             _context4.prev = 0;
             _context4.next = 3;
-            return axios__WEBPACK_IMPORTED_MODULE_0___default().put("http://127.0.0.1:8000/products/".concat(data.id), data.data);
+            return axios__WEBPACK_IMPORTED_MODULE_1___default().put("http://127.0.0.1:8000/products/".concat(data.id), data.data);
           case 3:
             _context4.next = 8;
             break;
@@ -15131,7 +15291,7 @@ var axiosDeleteProduct = /*#__PURE__*/function () {
           case 0:
             _context5.prev = 0;
             _context5.next = 3;
-            return axios__WEBPACK_IMPORTED_MODULE_0___default()["delete"]("http://127.0.0.1:8000/products/".concat(id));
+            return axios__WEBPACK_IMPORTED_MODULE_1___default()["delete"]("http://127.0.0.1:8000/products/".concat(id));
           case 3:
             _context5.next = 8;
             break;
@@ -15150,6 +15310,8 @@ var axiosDeleteProduct = /*#__PURE__*/function () {
     return _ref5.apply(this, arguments);
   };
 }();
+
+// REQUEST FUNCTIONS
 function fetchAllProductsRequest() {
   var response;
   return _regeneratorRuntime().wrap(function fetchAllProductsRequest$(_context6) {
@@ -15157,7 +15319,7 @@ function fetchAllProductsRequest() {
       switch (_context6.prev = _context6.next) {
         case 0:
           _context6.next = 2;
-          return (0,redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__.call)(axiosFetchAllProducts);
+          return (0,redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.call)(axiosFetchAllProducts);
         case 2:
           response = _context6.sent;
           if (!response) {
@@ -15165,7 +15327,7 @@ function fetchAllProductsRequest() {
             break;
           }
           _context6.next = 6;
-          return (0,redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__.put)((0,_actions_productActions__WEBPACK_IMPORTED_MODULE_3__.fetchAllProductsSuccess)(response.data));
+          return (0,redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.put)((0,_actions_productActions__WEBPACK_IMPORTED_MODULE_3__.fetchAllProductsSuccess)(response.data));
         case 6:
           _context6.next = 9;
           break;
@@ -15186,7 +15348,7 @@ function fetchProductRequest(_ref6) {
         case 0:
           payload = _ref6.payload;
           _context7.next = 3;
-          return (0,redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__.call)(axiosFetchProduct, payload);
+          return (0,redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.call)(axiosFetchProduct, payload);
         case 3:
           response = _context7.sent;
           if (!response) {
@@ -15194,7 +15356,7 @@ function fetchProductRequest(_ref6) {
             break;
           }
           _context7.next = 7;
-          return (0,redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__.put)((0,_actions_productActions__WEBPACK_IMPORTED_MODULE_3__.fetchProductSuccess)(response.data));
+          return (0,redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.put)((0,_actions_productActions__WEBPACK_IMPORTED_MODULE_3__.fetchProductSuccess)(response.data));
         case 7:
           _context7.next = 10;
           break;
@@ -15207,6 +15369,8 @@ function fetchProductRequest(_ref6) {
     }
   }, _marked2);
 }
+
+// FUNCTION
 function postProductRequest(_ref7) {
   var payload;
   return _regeneratorRuntime().wrap(function postProductRequest$(_context8) {
@@ -15215,7 +15379,7 @@ function postProductRequest(_ref7) {
         case 0:
           payload = _ref7.payload;
           _context8.next = 3;
-          return (0,redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__.call)(axiosPostProduct, payload.data);
+          return (0,redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.call)(axiosPostProduct, payload.data);
         case 3:
         case "end":
           return _context8.stop();
@@ -15231,7 +15395,7 @@ function updateProductRequest(_ref8) {
         case 0:
           payload = _ref8.payload;
           _context9.next = 3;
-          return (0,redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__.call)(axiosUpdateProduct, payload);
+          return (0,redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.call)(axiosUpdateProduct, payload);
         case 3:
         case "end":
           return _context9.stop();
@@ -15247,7 +15411,7 @@ function deleteProductRequest(_ref9) {
         case 0:
           payload = _ref9.payload;
           _context10.next = 3;
-          return (0,redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__.call)(axiosDeleteProduct, payload);
+          return (0,redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.call)(axiosDeleteProduct, payload);
         case 3:
         case "end":
           return _context10.stop();
@@ -15261,7 +15425,7 @@ function fetchAllProducts() {
       switch (_context11.prev = _context11.next) {
         case 0:
           _context11.next = 2;
-          return (0,redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__.takeEvery)(_actions__WEBPACK_IMPORTED_MODULE_2__.FETCH_ALL_PRODUCTS, fetchAllProductsRequest);
+          return (0,redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.takeEvery)(_actions__WEBPACK_IMPORTED_MODULE_2__.FETCH_ALL_PRODUCTS, fetchAllProductsRequest);
         case 2:
         case "end":
           return _context11.stop();
@@ -15275,7 +15439,7 @@ function postProduct() {
       switch (_context12.prev = _context12.next) {
         case 0:
           _context12.next = 2;
-          return (0,redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__.takeEvery)(_actions__WEBPACK_IMPORTED_MODULE_2__.POST_PRODUCT, postProductRequest);
+          return (0,redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.takeEvery)(_actions__WEBPACK_IMPORTED_MODULE_2__.POST_PRODUCT, postProductRequest);
         case 2:
         case "end":
           return _context12.stop();
@@ -15289,7 +15453,7 @@ function updateProduct() {
       switch (_context13.prev = _context13.next) {
         case 0:
           _context13.next = 2;
-          return (0,redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__.takeEvery)(_actions__WEBPACK_IMPORTED_MODULE_2__.UPDATE_PRODUCT, updateProductRequest);
+          return (0,redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.takeEvery)(_actions__WEBPACK_IMPORTED_MODULE_2__.UPDATE_PRODUCT, updateProductRequest);
         case 2:
         case "end":
           return _context13.stop();
@@ -15303,7 +15467,7 @@ function fetchProduct() {
       switch (_context14.prev = _context14.next) {
         case 0:
           _context14.next = 2;
-          return (0,redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__.takeEvery)(_actions__WEBPACK_IMPORTED_MODULE_2__.FETCH_PRODUCT, fetchProductRequest);
+          return (0,redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.takeEvery)(_actions__WEBPACK_IMPORTED_MODULE_2__.FETCH_PRODUCT, fetchProductRequest);
         case 2:
         case "end":
           return _context14.stop();
@@ -15317,7 +15481,7 @@ function deleteProduct() {
       switch (_context15.prev = _context15.next) {
         case 0:
           _context15.next = 2;
-          return (0,redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__.takeEvery)(_actions__WEBPACK_IMPORTED_MODULE_2__.DELETE_PRODUCT, deleteProductRequest);
+          return (0,redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.takeEvery)(_actions__WEBPACK_IMPORTED_MODULE_2__.DELETE_PRODUCT, deleteProductRequest);
         case 2:
         case "end":
           return _context15.stop();
@@ -15331,7 +15495,7 @@ function rootSaga() {
       switch (_context16.prev = _context16.next) {
         case 0:
           _context16.next = 2;
-          return (0,redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__.all)([fetchAllProducts(), fetchProduct(), postProduct(), updateProduct(), deleteProduct()]);
+          return (0,redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.all)([fetchAllProducts(), fetchProduct(), postProduct(), updateProduct(), deleteProduct()]);
         case 2:
         case "end":
           return _context16.stop();
@@ -15356,22 +15520,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
 /* harmony import */ var redux_persist__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux-persist */ "./node_modules/redux-persist/es/index.js");
+/* harmony import */ var redux_saga__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! redux-saga */ "./node_modules/redux-saga/dist/redux-saga-core-npm-proxy.esm.js");
 /* harmony import */ var redux_thunk__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! redux-thunk */ "./node_modules/redux-thunk/es/index.js");
-/* harmony import */ var _reducers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./reducers */ "./resources/js/redux/reducers/index.js");
-/* harmony import */ var _sagas__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./sagas */ "./resources/js/redux/sagas/index.js");
-/* harmony import */ var redux_saga__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! redux-saga */ "./node_modules/redux-saga/dist/redux-saga-core-npm-proxy.esm.js");
+/* harmony import */ var _reducers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./reducers */ "./resources/js/redux/reducers/index.js");
+/* harmony import */ var _sagas__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./sagas */ "./resources/js/redux/sagas/index.js");
 
 
 
 
 
+// project imports
 
-var sagaMiddleware = (0,redux_saga__WEBPACK_IMPORTED_MODULE_3__["default"])();
+
+var sagaMiddleware = (0,redux_saga__WEBPACK_IMPORTED_MODULE_1__["default"])();
 var composeEnhancers = typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || redux__WEBPACK_IMPORTED_MODULE_4__.compose;
 var middlewares = [redux_thunk__WEBPACK_IMPORTED_MODULE_5__["default"], sagaMiddleware];
-var store = (0,redux__WEBPACK_IMPORTED_MODULE_4__.createStore)(_reducers__WEBPACK_IMPORTED_MODULE_1__["default"], composeEnhancers(redux__WEBPACK_IMPORTED_MODULE_4__.applyMiddleware.apply(void 0, middlewares)));
+var store = (0,redux__WEBPACK_IMPORTED_MODULE_4__.createStore)(_reducers__WEBPACK_IMPORTED_MODULE_2__["default"], composeEnhancers(redux__WEBPACK_IMPORTED_MODULE_4__.applyMiddleware.apply(void 0, middlewares)));
 var persister = (0,redux_persist__WEBPACK_IMPORTED_MODULE_0__.persistStore)(store);
-sagaMiddleware.run(_sagas__WEBPACK_IMPORTED_MODULE_2__["default"]);
+sagaMiddleware.run(_sagas__WEBPACK_IMPORTED_MODULE_3__["default"]);
 
 
 /***/ }),
@@ -50992,6 +51158,66 @@ const OffcanvasToggling = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.forwar
 OffcanvasToggling.defaultProps = defaultProps;
 OffcanvasToggling.displayName = 'OffcanvasToggling';
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (OffcanvasToggling);
+
+/***/ }),
+
+/***/ "./node_modules/react-bootstrap/esm/Row.js":
+/*!*************************************************!*\
+  !*** ./node_modules/react-bootstrap/esm/Row.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _ThemeProvider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ThemeProvider */ "./node_modules/react-bootstrap/esm/ThemeProvider.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+const Row = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.forwardRef(({
+  bsPrefix,
+  className,
+  // Need to define the default "as" during prop destructuring to be compatible with styled-components github.com/react-bootstrap/react-bootstrap/issues/3595
+  as: Component = 'div',
+  ...props
+}, ref) => {
+  const decoratedBsPrefix = (0,_ThemeProvider__WEBPACK_IMPORTED_MODULE_3__.useBootstrapPrefix)(bsPrefix, 'row');
+  const breakpoints = (0,_ThemeProvider__WEBPACK_IMPORTED_MODULE_3__.useBootstrapBreakpoints)();
+  const minBreakpoint = (0,_ThemeProvider__WEBPACK_IMPORTED_MODULE_3__.useBootstrapMinBreakpoint)();
+  const sizePrefix = `${decoratedBsPrefix}-cols`;
+  const classes = [];
+  breakpoints.forEach(brkPoint => {
+    const propValue = props[brkPoint];
+    delete props[brkPoint];
+    let cols;
+
+    if (propValue != null && typeof propValue === 'object') {
+      ({
+        cols
+      } = propValue);
+    } else {
+      cols = propValue;
+    }
+
+    const infix = brkPoint !== minBreakpoint ? `-${brkPoint}` : '';
+    if (cols != null) classes.push(`${sizePrefix}${infix}-${cols}`);
+  });
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(Component, {
+    ref: ref,
+    ...props,
+    className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(className, decoratedBsPrefix, ...classes)
+  });
+});
+Row.displayName = 'Row';
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Row);
 
 /***/ }),
 

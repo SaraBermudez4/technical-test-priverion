@@ -1,8 +1,10 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
+// project imports
 import List from "../components/products/List";
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 const App = () => {
     return (
@@ -14,6 +16,7 @@ const App = () => {
                     <Route path="/list" element={<List />} />
                 </Routes>
             </div>
+            <Footer />
         </BrowserRouter>
     );
 };

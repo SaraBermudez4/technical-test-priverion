@@ -8,11 +8,14 @@ import {
     UPDATE_PRODUCT
 } from ".";
 
+// Get all products
 export const fetchAllProducts = () => {
     return {
         type: FETCH_ALL_PRODUCTS,
     };
 };
+
+// Get all products success
 export const fetchAllProductsSuccess = (products) => {
     return {
         type: FETCH_ALL_PRODUCTS_SUCCESS,
@@ -20,12 +23,15 @@ export const fetchAllProductsSuccess = (products) => {
     };
 };
 
+// Get product
 export const fetchProduct = (payload) => {
     return {
         type: FETCH_PRODUCT,
         payload
     };
 };
+
+// Get product success
 export const fetchProductSuccess = (product) => {
     return {
         type: FETCH_PRODUCT_SUCCESS,
@@ -33,6 +39,7 @@ export const fetchProductSuccess = (product) => {
     };
 };
 
+// Post product
 export const postProduct = (payload) => {
     return {
         type: POST_PRODUCT,
@@ -40,16 +47,18 @@ export const postProduct = (payload) => {
     };
 };
 
-export const deleteProduct = (id) => {
-    return {
-        type: DELETE_PRODUCT,
-        payload: id,
-    };
-};
-
+// Update product
 export const updateProduct = (product) => {
     return {
         type: UPDATE_PRODUCT,
         payload: product,
     };
 }
+
+// Delete product
+export const deleteProduct = (id) => {
+    return {
+        type: DELETE_PRODUCT,
+        payload: id,
+    };
+};

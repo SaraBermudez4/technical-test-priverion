@@ -1,9 +1,13 @@
-import axios from "axios";
 import { all, call, put, takeEvery } from "redux-saga/effects";
 
+// third party
+import axios from "axios";
+
+// actions
 import { DELETE_PRODUCT, FETCH_ALL_PRODUCTS, FETCH_PRODUCT, POST_PRODUCT, UPDATE_PRODUCT } from "../actions";
 import { fetchAllProductsSuccess, fetchProductSuccess } from "../actions/productActions";
 
+// REQUESTS
 const axiosFetchAllProducts = async () => {
     try {
         const response = await axios.get("http://127.0.0.1:8000/products/")
@@ -46,6 +50,7 @@ const axiosDeleteProduct = async (id) => {
     }
 }
 
+// REQUEST FUNCTIONS
 function* fetchAllProductsRequest() {
     const response = yield call(axiosFetchAllProducts);
     if (response) {
@@ -64,6 +69,7 @@ function* fetchProductRequest({ payload }) {
     }
 }
 
+// FUNCTION
 function* postProductRequest({ payload }) {
     yield call(axiosPostProduct, payload.data);
 }

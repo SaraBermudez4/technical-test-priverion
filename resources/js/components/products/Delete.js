@@ -1,8 +1,11 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 
+// react-bootstrap
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import { useDispatch } from "react-redux";
+
+// actions
 import { fetchAllProducts, deleteProduct } from "../../redux/actions/productActions";
 
 const Delete = ({ show, handleClose, productDelete }) => {
@@ -18,7 +21,7 @@ const Delete = ({ show, handleClose, productDelete }) => {
     return (
         <Modal show={show} onHide={handleClose}>
             <Modal.Header>
-                <Modal.Title>Delete product ${productDelete.name}</Modal.Title>
+                <Modal.Title>Delete product {productDelete.name}</Modal.Title>
             </Modal.Header>
             <Modal.Body>
                 Are you sure you want to delete this product?
