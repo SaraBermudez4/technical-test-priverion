@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,8 +19,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('count', function (Request $request) {
-    return response()->json([
-        'message' => $request->message,
-    ]);
+Route::controller(ProductController::class)->group(function () {
+    Route::get('/products', 'index');
+    Route::post('/products', 'store');
+    Route::get('/products/{id}', 'show');
+    Route::put('/products/{id}', 'update');
+    Route::delete('/products/{id}', 'destroy');
 });

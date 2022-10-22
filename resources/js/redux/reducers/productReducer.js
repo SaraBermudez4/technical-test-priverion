@@ -1,12 +1,18 @@
 import {
     FETCH_ALL_PRODUCTS,
-    FETCH_ALL_PRODUCTS_SUCCESS
+    FETCH_ALL_PRODUCTS_SUCCESS,
+    FETCH_PRODUCT_SUCCESS
 } from "../actions";
 
 const initialState = {
     products: [],
+    product: {
+        id: '',
+        name: '',
+        amount: '',
+        type: ''
+    },
     loading: false,
-    error: null,
 };
 
 export default function productReducer(state = initialState, action) {
@@ -21,6 +27,11 @@ export default function productReducer(state = initialState, action) {
                 ...state,
                 loading: false,
                 products: action.payload,
+            };
+        case FETCH_PRODUCT_SUCCESS:
+            return {
+                ...state,
+                product: action.payload,
             };
         default:
             return state;

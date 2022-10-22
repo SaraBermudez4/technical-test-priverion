@@ -20,7 +20,7 @@ const List = () => {
     const [showDelete, setShowDelete] = useState(false);
 
     const [productDelete, setProductDelete] = useState({});
-
+    const [productUpdateId, setProductUpdateId] = useState();
 
     const handleCloseCreate = () => setShowCreate(false);
     const handleShowCreate = () => setShowCreate(true);
@@ -40,7 +40,7 @@ const List = () => {
     return (
         <>
             <Create show={showCreate} handleClose={handleCloseCreate} />
-            <Update show={showUpdate} handleClose={handleCloseUpdate} />
+            <Update show={showUpdate} handleClose={handleCloseUpdate} id={productUpdateId} />
             <Delete show={showDelete} handleClose={handleCloseDelete} productDelete={productDelete} />
             <Card>
                 <Card.Header>
@@ -55,21 +55,26 @@ const List = () => {
                             <tr>
                                 <th>Id</th>
                                 <th>Name</th>
-                                <th>Phone</th>
+                                <th>Amount</th>
+                                <th>Type</th>
                                 <th>Actions</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {products.map((product, index) => (
+                            {products?.map((product, index) => (
                                 <tr key={index}>
                                     <td scope="row">{product.id}</td>
                                     <td>{product.name}</td>
-                                    <td>{product.phone}</td>
+                                    <td>{product.amount}</td>
+                                    <td>{product.type}</td>
                                     <td>
-                                        <Button variant="outline-primary" onClick={handleShowUpdate}>Update</Button>{' '}
+                                        <Button variant="outline-primary" onClick={() => {
+                                            setProductUpdateId(product.id)
+                                            handleShowUpdate()
+                                        }}>Update</Button>{' '}
                                         <Button variant="outline-danger" onClick={() => {
-                                            handleShowDelete()
                                             setProductDelete(product)
+                                            handleShowDelete()
                                         }}>Delete</Button>
                                     </td>
                                 </tr>

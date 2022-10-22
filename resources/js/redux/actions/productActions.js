@@ -2,6 +2,8 @@ import {
     DELETE_PRODUCT,
     FETCH_ALL_PRODUCTS,
     FETCH_ALL_PRODUCTS_SUCCESS,
+    FETCH_PRODUCT,
+    FETCH_PRODUCT_SUCCESS,
     POST_PRODUCT,
     UPDATE_PRODUCT
 } from ".";
@@ -18,10 +20,23 @@ export const fetchAllProductsSuccess = (products) => {
     };
 };
 
-export const postProduct = (product) => {
+export const fetchProduct = (payload) => {
+    return {
+        type: FETCH_PRODUCT,
+        payload
+    };
+};
+export const fetchProductSuccess = (product) => {
+    return {
+        type: FETCH_PRODUCT_SUCCESS,
+        payload: product,
+    };
+};
+
+export const postProduct = (payload) => {
     return {
         type: POST_PRODUCT,
-        payload: product,
+        payload
     };
 };
 
