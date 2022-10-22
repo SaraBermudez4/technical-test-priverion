@@ -55,8 +55,11 @@ const List = () => {
                             <tr>
                                 <th>Id</th>
                                 <th>Name</th>
-                                <th>Amount</th>
-                                <th>Type</th>
+                                <th>Trademark</th>
+                                <th>Category</th>
+                                <th>Age</th>
+                                <th>Price</th>
+                                <th>quantity</th>
                                 <th>Actions</th>
                             </tr>
                         </thead>
@@ -65,8 +68,11 @@ const List = () => {
                                 <tr key={index}>
                                     <td scope="row">{product.id}</td>
                                     <td>{product.name}</td>
-                                    <td>{product.amount}</td>
-                                    <td>{product.type}</td>
+                                    <td>{product.trademark}</td>
+                                    <td>{product.category}</td>
+                                    <td>{product.age}</td>
+                                    <td>{product.price}</td>
+                                    <td>{product.quantity}</td>
                                     <td>
                                         <Button variant="outline-primary" onClick={() => {
                                             setProductUpdateId(product.id)

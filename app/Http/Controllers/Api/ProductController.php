@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Product;
 use App\Models\Products;
 
 class ProductController extends Controller
@@ -30,8 +29,11 @@ class ProductController extends Controller
     {
         $product = new Products();
         $product->name = $request->name;
-        $product->amount = $request->amount;
-        $product->type = $request->type;
+        $product->trademark = $request->trademark;
+        $product->category = $request->category;
+        $product->age = $request->age;
+        $product->price = $request->price;
+        $product->quantity = $request->quantity;
 
         $product->save();
     }
@@ -59,8 +61,11 @@ class ProductController extends Controller
     {
         $product = Products::findOrFail($request->id);
         $product->name = $request->name;
-        $product->amount = $request->amount;
-        $product->type = $request->type;
+        $product->trademark = $request->trademark;
+        $product->category = $request->category;
+        $product->age = $request->age;
+        $product->price = $request->price;
+        $product->quantity = $request->quantity;
 
         $product->save();
         return $product;
