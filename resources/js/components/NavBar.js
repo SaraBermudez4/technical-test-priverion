@@ -9,7 +9,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 const NavBar = () => {
     return (
-        <Navbar style={{ background: 'rgb(247 204 59 / 86%)' }} expand="lg" >
+        <Navbar style={{ background: 'rgb(180 138 251 / 86%)' }} expand="lg" >
             <Container>
                 <Navbar.Brand as={Link} to="/"><h5>Smile Toys</h5></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
