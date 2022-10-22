@@ -1,8 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Create from "../components/Create";
-import Edit from "../components/Edit";
-import List from "../components/List";
+
+import List from "../components/products/List";
 import NavBar from "../components/NavBar";
 
 const App = () => {
@@ -13,8 +12,6 @@ const App = () => {
                 <Routes>
                     <Route path="/" element={<List />} />
                     <Route path="/list" element={<List />} />
-                    <Route path="/create" element={<Create />} />
-                    <Route path="/edit" element={<Edit />} />
                 </Routes>
             </div>
         </BrowserRouter>
