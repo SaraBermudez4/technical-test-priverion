@@ -13922,7 +13922,6 @@ root.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)
     store: _redux_store__WEBPACK_IMPORTED_MODULE_4__.store,
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
       style: {
-        background: "url(/images/background.png) no-repeat center center fixed",
         width: '100vw',
         height: '100vh'
       },

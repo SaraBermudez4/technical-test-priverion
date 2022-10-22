@@ -13,9 +13,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
         <Provider store={store}>
-            {/* https://picsum.photos/1600/1200 */}
             <div style={{
-                background: `url(/images/background.png) no-repeat center center fixed`,
                 width: '100vw',
                 height: '100vh',
             }}>
